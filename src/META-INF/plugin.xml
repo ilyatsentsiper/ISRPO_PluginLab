@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>com.student.ml.generator</id>
+    <name>ML Pipeline Generator</name>
+    <version>1.0.0</version>
+    <vendor email="student@university.edu">Student</vendor>
+
+    <description><![CDATA[
+    Лабораторная работа. Нативный плагин для генерации шаблонов классического ML на Python.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.python</depends>
+
+    <actions>
+        <action id="com.student.ml.GenerateAction"
+                class="ml_generator.GeneratePipelineAction"
+                text="Generate ML Pipeline"
+                description="Insert template for Scikit-Learn">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt M"/>
+        </action>
+    </actions>
+</idea-plugin>
