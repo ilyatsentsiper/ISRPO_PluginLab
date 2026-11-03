@@ -1,3 +1,5 @@
+from java.lang import Runnable
+
 from com.intellij.openapi.actionSystem import AnAction
 from com.intellij.openapi.command import WriteCommandAction
 from com.intellij.openapi.fileEditor import FileEditorManager
