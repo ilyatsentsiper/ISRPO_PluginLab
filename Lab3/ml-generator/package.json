@@ -1,0 +1,33 @@
+{
+  "name": "ml-generator",
+  "displayName": "ml-generator",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.144.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ml-generator.generatePipeline",
+        "title": "Generate ML Pipeline"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "ml-generator.generatePipeline",
+        "key": "ctrl+alt+p",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^26.6.6",
+    "@types/vscode": "^1.144.0",
+    "typescript": "^7.0.2"
+  }
+}
